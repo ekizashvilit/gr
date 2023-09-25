@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+.custom-font {
+  font-family: "Noto Sans Georgian", sans-serif !important;
+}
+
+.custom-form {
+  max-width: 1610px;
+  box-shadow: 0px 8px 0px 0px #ed1a25;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 43px;
+  background: white;
+  border-radius: 24px;
+}
+
+.ant-select-selector {
+  background: #f1f2f6 !important;
+}
+
+.ant-select-arrow {
+  color: #ed1a25 !important;
+}
+
+.ant-form-item {
+  margin-bottom: 0;
+}
+
+.ant-select-selector {
+  padding: 0 1rem !important;
+  border: 1px solid #f1f2f6 !important;
+}
+
+.ant-select-selection-search {
+  padding: 0 5px !important;
+}
+
+.ant-select-selector:hover {
+  border: 1px solid black !important;
+}
+
+.ant-select-selection-item {
+  font-family: "Noto Sans Georgian", sans-serif !important;
+}
+
+.ant-select-item-option-content {
+  font-family: "Noto Sans Georgian", sans-serif !important;
+}
+
+.ant-select-arrow {
+  margin-right: 6px;
+}
+
+.ant-picker {
+  border: 1px solid #f1f2f6 !important;
+}
+
+.ant-picker:hover {
+  border: 1px solid black !important;
+}
+
+.right-border-radius {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.right-border-radius input::placeholder {
+  font-weight: 700;
+}
+
+.left-border-radius {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.placeholder-color input::placeholder {
+  color: black !important;
+}
+
+.ant-picker-input {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.8rem;
+}
