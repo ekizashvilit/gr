@@ -96,3 +96,9 @@ body {
   flex-direction: row-reverse;
   gap: 0.8rem;
 }
+
+.ant-btn:hover {
+  background: #f1f2f6 !important;
+  color: black !important;
+  border: 1px solid black !important;
+}

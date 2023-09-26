@@ -7,6 +7,7 @@ export default {
         29: "29px",
         170: "170px",
         273: "273px",
+        339: "339px",
       },
 
       height: {
