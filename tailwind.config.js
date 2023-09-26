@@ -6,6 +6,7 @@ export default {
       width: {
         29: "29px",
         170: "170px",
+        242: "242px",
         273: "273px",
         339: "339px",
       },
@@ -18,6 +19,7 @@ export default {
 
       backgroundColor: {
         gr: "#F1F2F6",
+        customRed: "#ED1A25",
       },
 
       textColor: {

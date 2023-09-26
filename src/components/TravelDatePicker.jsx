@@ -90,17 +90,17 @@ moment.locale("ka", {
 
 const TravelDatePicker = () => {
   return (
-    <div className="flex relative ">
+    <div className="flex flex-[2] relative ">
       <DatePicker
         placeholder={moment().locale("ka").format("ddd, D MMM")}
-        className="h-60 w-170 bg-gr right-border-radius placeholder-color custom-font"
+        className="h-60 flex-1 bg-gr right-border-radius placeholder-color custom-font"
         suffixIcon={<Calendar />}
       />
       <div className="h-60 w-px flex items-center absolute right-1/2">
         <div className="bg-black h-9 w-full"></div>
       </div>
       <DatePicker
-        className="h-60 w-170 bg-gr left-border-radius placeholder-color custom-font"
+        className="h-60 flex-1 bg-gr left-border-radius placeholder-color custom-font"
         placeholder="+ უკანა გზა"
         suffixIcon
       />

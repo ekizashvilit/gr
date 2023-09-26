@@ -7,9 +7,9 @@ const StationPicker = () => {
   const cityName = cities.map((item) => item.name);
 
   return (
-    <div className="flex gap-2 relative">
+    <div className="flex flex-[3] gap-2 relative">
       <Form.Item name="departure" initialValue="გამგზავრების სადგური">
-        <Select showSearch className="!w-273 h-60">
+        <Select showSearch className="h-60">
           {cityName.map((item, index) => {
             return <Option key={index}>{item}</Option>;
           })}
@@ -19,7 +19,7 @@ const StationPicker = () => {
         <Swap className="absolute z-10 cursor-pointer" />
       </div>
       <Form.Item name="arrival" initialValue="ჩასვლის სადგური">
-        <Select showSearch className="!w-273 h-60">
+        <Select showSearch className="h-60">
           {cityName.map((item, index) => {
             return <Option key={index}>{item}</Option>;
           })}

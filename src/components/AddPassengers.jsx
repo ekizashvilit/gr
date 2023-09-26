@@ -15,7 +15,7 @@ const AddPassengers = () => {
   };
 
   const content = (
-    <div className="w-339 custom-font flex flex-col gap-3 ">
+    <div className="flex-[2] custom-font flex flex-col gap-3 ">
       <Options title="ზრდასრული" />
       <Options title="ბავშვი" additionalInfo="5-12 წლამდე" />
       <Options title="შშმ პირი" />
@@ -42,7 +42,7 @@ const AddPassengers = () => {
       className="add-passengers "
     >
       <Button
-        className="bg-gr h-60 w-339 text-black custom-font font-bold flex items-center justify-center"
+        className="bg-gr h-60 flex-[2] text-black custom-font font-bold flex items-center justify-center"
         type="primary"
         icon={<Profile />}
       >
