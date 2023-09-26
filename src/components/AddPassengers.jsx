@@ -1,32 +1,36 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Popover } from "antd";
 import { ReactComponent as Profile } from "../assets/svg/add-people.svg";
-import { PlusCircleOutlined, MinusCircleOutlined } from "@ant-design/icons";
+import Options from "./Options";
 
 const AddPassengers = () => {
   const [open, setOpen] = useState(false);
-  const [number, setNumber] = useState(0);
-
-  const hide = () => {
-    setOpen(false);
-  };
 
   const handleOpenChange = (newOpen) => {
     setOpen(newOpen);
   };
 
+  const hide = () => {
+    setOpen(false);
+  };
+
   const content = (
-    <div>
-      <div className="flex justify-between">
-        <p>ზრდასრული</p>
-        <div>
-          <MinusCircleOutlined />
-          {number}
-          <PlusCircleOutlined />
-        </div>
-      </div>
+    <div className="w-339 custom-font flex flex-col gap-3 ">
+      <Options title="ზრდასრული" />
+      <Options title="ბავშვი" additionalInfo="5-12 წლამდე" />
+      <Options title="შშმ პირი" />
+      <div className="w-full bg-gray-300 h-px mt-2"></div>
+      <Button
+        className="custom-font border-none text-right text-customRed finish-btn"
+        type="default"
+        onClick={hide}
+      >
+        დასრულება
+      </Button>
     </div>
   );
+
+  // border border-red-500
 
   return (
     <Popover
@@ -35,7 +39,7 @@ const AddPassengers = () => {
       trigger="click"
       open={open}
       onOpenChange={handleOpenChange}
-      className="add-passengers"
+      className="add-passengers "
     >
       <Button
         className="bg-gr h-60 w-339 text-black custom-font font-bold flex items-center justify-center"

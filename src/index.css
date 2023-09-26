@@ -102,3 +102,36 @@ body {
   color: black !important;
   border: 1px solid black !important;
 }
+
+.ant-popover-title {
+  font-family: "Noto Sans Georgian", sans-serif !important;
+  font-weight: lighter !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px !important;
+}
+
+.ant-popover-title::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #d6d6d6;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.ant-popover-inner {
+  border: 1px solid #ed1a25 !important;
+  padding: 25px !important;
+}
+
+.finish-btn {
+  padding: 0 !important;
+}
+
+.finish-btn:hover {
+  background: white !important;
+  border: none !important;
+  color: #ed1a25 !important;
+}
